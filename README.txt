@@ -1,5 +1,20 @@
-AntEpiSeeker2.0
+Modified AntEpiSeeker2.0
+-----------------
 
+Modify it for handling multi class input. You can use it on data out of 0-1.
+
+Only test on Ubuntu 14.04.
+
+For ubuntu/debian users, you can only install this program with command below:
+
+sudo apt-get install libgsl0ldbl 
+sudo apt-get install libgsl0-dev
+g++ AntEpiSeeker2.cpp -o AntEpiSeeker2 -lgsl -lgslcblas
+
+It will be better if you edit the parameter.txt with vi/vim, it was prepared from Windows, edit it with other editor may destory the format of text in it.
+
+
+-----------------
 1.Installation and execution
 For linux system version, users may simply unzip the package into one folder and run the program by typing "./AntEpiSeeker2"(gcc version 3.4.6 or above is needed). 
 For windows system version, unzip all files into one folder. The GNU Scientific Library (GSL) files "libgsl.dll", "libslcblas.dll" and "WinGsl.dll" in this package should be put in the same folder with AntEpiSeeker2 as well as your system folder (e.g., "c:\\windows\\system32"). Start MS-DOS by Start>Run>cmd and change your working directory to AntEpiSeeker2. Run the program by typing "AntEpiSeeker2.exe". 
