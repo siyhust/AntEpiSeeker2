@@ -2,6 +2,7 @@
 #include <ctime>
 #include <cstdlib>
 #include "model.cpp"
+#include "cstring"
 int rnd(int uper)
 {
           return (rand()%uper);

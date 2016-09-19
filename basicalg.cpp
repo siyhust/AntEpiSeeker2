@@ -59,7 +59,7 @@ public:
 	vector< vector <int> > data;
 	vector<string> SNPnames;
         map<string,int> id;
-	int classvalues[2];
+	int classvalues[11];
         void input_data(char* path);
         void destroy();
         void setpheromone(double level);
@@ -92,8 +92,7 @@ void SNP::input_data(char* path)
 	int i,j,temp;
         string line;
 	string word;
-        classvalues[0]=0;
-        classvalues[1]=0;
+	for(int iindex=0;iindex<11;iindex++){classvalues[iindex]=0;}
 	ifstream in1(path);
         i=0;
 	while(!in1.eof())
