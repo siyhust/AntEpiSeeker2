@@ -1,17 +1,17 @@
 Modified AntEpiSeeker2.0
 -----------------
 
-Modify it for handling multi class input. You can use it on data out of 0-1.
+Modify it for handling multi class input. You can use it on sample status out of 0-1.
 
-Only test on Ubuntu 14.04.
+Only tested on Ubuntu 14.04.
 
-For ubuntu/debian users, you can only install this program with command below:
+For ubuntu/debian users, you can compile this program with command below:
 
 sudo apt-get install libgsl0ldbl 
 sudo apt-get install libgsl0-dev
 g++ AntEpiSeeker2.cpp -o AntEpiSeeker2 -lgsl -lgslcblas
 
-It will be better if you edit the parameter.txt with vi/vim, it was prepared from Windows, edit it with other editor may destory the format of text in it.
+It will be better if you edit the parameter.txt with vi/vim, which was prepared from Windows, edit it with other editor may destory the format of text in it.
 
 
 -----------------
